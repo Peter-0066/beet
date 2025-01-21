@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <style>
+    
+    
+   </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="bot.html">
+          <img src="pic/plan.jpg" alt="Logo" width="40" height="34" class="d-inline-block align-text-top rounded-circle ">
+          SAFAR<span class="text-primary">.net</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbar-links">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item btn-secondary">
+              <a class="nav-link" href="tel:+963954944857">TAXI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:amir4worksy@gmail.com">Mail US</a>
+            </li>
+            <li class="nav-item btn-secondary">
+              <a class="nav-link" href="About us.html">About us</a>
+            </li>
+            
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+          Other services
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end text-center bg-secondary ">
+          <li><a class="dropdown-item " href="Offers.html">Offers</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item " href="safari.html">Safari</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item " href="send.html">Sending parcels</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pic/11.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="pic/12.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="pic/13.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   <div class="container mt-5 "> 
+     <div class="row ">
+      <div class="col-12 col-md-8 border "> 
+        <form action="">
+        <div class="row">
+          <div class="col-12 text-center bg-secondary"><p>Search information</p></div>
+        </div>
+        
+        <div class="row">
+          
+          <div class="col"> 
+             <!--رحلة باتجاه واحد او تنين-->
+                        
+            <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked>
+            <label class="btn  btn-outline-secondary" for="option1">Round trip</label>
+            
+            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="option2">One way trip</label>
+          
+          </div>
+
+
+          <div class="row"><!--اختيار مطارالذهاب  -->
+            <div class="col-4">
+            <select class="form-select bg-secondary" aria-label="Default select example">
+              <option  value="1">Damascus Airport</option>
+              <option value="2">Aleppo Airport</option>
+              <option value="3">Deir ez-Zor Airport</option>
+              <option value="4">Qamishli Airport</option>
+              <hr>
+              <option selected value="5">random</option>
+            </select>
+          </div>
+          </div>
+
+
+          <div class="row"><!--تارخ الذهاب والاياب-->
+            <div class="col m-1 ">
+              
+                <label for="go-date">the date of go</label>
+                <input  type="date" name="Go date" id="go-date">
+                <label for="re-date">Return date</label>
+                <input type="date" name="return date" id="re-date">
+              </form>
+            
+          </div>
+
+          <div class="row"><!--الدرجة الاقتصادية   -->
+            <div class="col m-1 ">
+              
+              <input type="radio" class="btn-check" name="Category" id="Category-1" autocomplete="off" checked>
+              <label class="btn" for="Category-1">Economical</label>
+              
+              <input type="radio" class="btn-check" name="Category" id="Category-2" autocomplete="off">
+              <label class="btn" for="Category-2">Businessmen</label>
+
+              <input type="radio" class="btn-check" name="Category" id="Category-3" autocomplete="off">
+              <label class="btn" for="Category-3">first class</label>
+            </div>
+            
+          </div>
+
+          <div class="row"><!-- عدد المسافرون -->
+            <div class="col">              
+                <label class="" for="num-tr" >number of trav</label>
+                <input type="number" max="6" min="1" value="1" id="num-tr" name="number-tr">              
+            </div>
+            <div class="col">
+              <input type="checkbox" class="btn-check" name="options-stop" id="Without-st" autocomplete="off" >
+              <label class="btn  btn-outline-secondary mb-3" for="Without-st">Without stopping</label>
+            </div>
+          </div>        
+        </div>               
+      </div>
+     </div>
+        </form>
+      <div class="col-12 col-md-4 border">
+        <div class="row">
+          
+          <div class="col-12 text-center bg-secondary"><p>results</p></div>
+        </div>
+        <div class="row">
+          <div class="col"><!--هون رح تكون النتائج للبحث  --></div>
+        </div>
+      </div>
+
+     
+    </div>
+   </div>
+
+   <div class="container mt-5 mb-5 border">
+    <div class="row">
+      <div class="col bg-secondary text-center">
+        <p>Personal information</p>
+        <form action="">
+
+      </div>
+      <div class="row"><!-- الاسم الثلاثي -->
+        <div class="col-4 mt-1">
+          <label for="fname" id="fname">First name</label>
+          <input class="bg-secondary" type="text" id="fname" required>
+        </div>
+        <div class="col-4 mt-1"> 
+          <label for="mdname" id="mname">Midll name</label>
+          <input class="bg-secondary" type="text" id="mdname" required>
+        </div>
+        <div class="col-4 mt-1"> 
+          <label for="laname" id="lname">last name</label>
+          <input class="bg-secondary" type="text" id="laname" required>
+        </div>
+      </div>
+      <div class="row w">
+        <div class="col-4 mt-1 "><!--  بطاقة الائتمان-->
+          <label for="credit" >credit card</label>
+          <input class="bg-secondary" type="number" maxlength="16" id="credit" required>
+        </div>
+        <div class="col-4 mt-1"><!-- رقم الهاتف -->
+          <label for="phonenum" >phone number</label>
+          <input class="bg-secondary" type="number" maxlength="10" id="phonenum" required>
+        </div>
+        <div class="col-4 mt-1"><!-- الرقم الوطني  -->
+          <label for="nationnum" >nation number</label>
+          <input class="bg-secondary" type="number" maxlength="11" id="nationnum" required>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-4 mt-1">
+          <label for="from">from</label> <!-- من الدولة كذا -->
+          <input class="bg-secondary" type="text" id="from" required>
+        </div>
+        <div class="col-4 mt-1">
+          <label for="to">to</label><!-- الى الدولة كذا -->
+          <input class="bg-secondary" type="text" id="to" required>
+        </div>
+        <div class="col-4 mt-1"><label for="cardsnum">number of cards</label><!-- عدد بطاقات السفر  -->
+        <input class="bg-secondary" type="number" id="cardsnum" min="1" max="6" required></div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-6 "><button type="submit" style="width:100%;" >confirm</button></div>
+        <div class="col-6"><button type="reset" style="width:100%;">cancel</button></div>
+      </div>
+      </form>
+
+    </div>
+   </div>
+
+  
+    
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
